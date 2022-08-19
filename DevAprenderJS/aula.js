@@ -170,7 +170,7 @@ switch (permissao){
 
     default: 
     console.log('Usuário não reconhecido!');
-} */
+} 
 
 for(let i = 5; i >= 1; i--) {
     if (i % 2 !== 0) {
@@ -178,13 +178,161 @@ for(let i = 5; i >= 1; i--) {
     }
     
 }
+*/
 
 // While Loop
-let i = 5;
+/*let i = 5;
 
 while (i >= 1){
     if (i % 2 !== 0) {
         console.log(i);
     }
     i--;
+}
+
+// Do..while
+
+
+let i = 0;
+do {
+    console.log('digitando!',i);
+    i++;
+} while (i < 10)
+
+
+const pessoa = {
+    nome: 'Johnatas',
+    idade: 25
+};
+
+
+for(let chave in pessoa){
+    console.log(chave, pessoa['nome'])
+}
+
+
+const cores = ['vermelho','azul','verde'];
+
+for (let indice in cores){
+    console.log(indice, cores[indice])
+}
+
+// for-of
+
+for (let cor of cores){
+    console.log(cor);
+}
+
+const pessoa = ['Johnatas', 21, 'Solteiro'];
+
+for (let indice of pessoa){
+    console.log(indice)
+}
+
+
+// Escreva uma função que usa 2 número e retorna o maior entre eles
+
+let n1 = 1;
+let n2 = 3;
+
+maior = 0
+menor = 0
+if (n1 > n2){
+    maior = n1
+}else {
+    maior = n2
+}
+console.log(maior)
+
+
+ 
+
+ let valorMaior = max(10, 6);
+
+ console.log(valorMaior);
+
+ function max(n1, n2){
+    if (n1 > n2)
+        return n1
+    else return n2
+    
+    return n1 > n2 ? n1: n2;
+ }
+ */
+
+ /*
+ ////// divisivel pro 3 => Fizz
+ ////// divisivel por 5 => buzz
+ ////// Divisivel por 3 e 5 => FIzzBuzz
+ ////// Não divisivel por 3 ou 5 => entrada
+ ////// Não é um número => 'Não é um número'
+
+ const resultado = fizzBuzz();
+
+ console.log(resultado);
+
+ function fizzBuzz(valor){
+    if (typeof valor !== 'number'){
+        return 'Não é um número'
+    }else {
+        if (valor % 3 == 0 && valor % 5 ==0){
+            return 'FizzBuzz'
+        }else {
+            if ( valor % 3 == 0){
+            return 'Fizz'
+            }
+            if (valor % 5 == 0) {
+                return 'Buzz'
+            }
+            if (valor % 3 != 0 && valor % 5 != 0){
+                return valor
+            }             
+        }    
+    }
+     
+    
+ }
+*/
+
+//// Velocidade máxima de até 70
+//// a cada 5km acima do limite você ganha 1 ponto
+//// Math.Floor()
+//// caso pontos maior que 12 -> "Carteira Suspensa"
+
+/*const velocidade = verificarVelocidade(81);
+console.log(velocidade)
+
+
+function verificarVelocidade(vel){
+    const velocidadeMaxima = 70;
+    const KmPorPonto = 5;
+    if (vel <= velocidadeMaxima){
+        return 'Tudo ok'
+    }else{ 
+        let total = Math.floor((vel - velocidadeMaxima)/ KmPorPonto)
+        if (total > 12){
+            return `Ultrapassou o limite de pontos, Carteira Suspensa`
+        }else{
+            return `Acima do limite de velocidade, ${total} pontos na carteira`
+        }
+        
+    }
+
+}
+*/
+
+//// Receber uma quantidade de valores para avaliar
+//// Função exibe se cada valor é par ou ímpar
+
+exibirTipo(10);
+
+function exibirTipo(limite){
+    for(let lim = 0; lim <= limite; lim++){
+        //console.log(`${lim}`)
+        if (lim % 2 === 0){
+            console.log(`${lim} "PAR"`)
+        }else {
+            console.log(`${lim} "ÍMPAR"`)
+        }
+    }
 }
