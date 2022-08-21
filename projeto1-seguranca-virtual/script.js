@@ -1,11 +1,9 @@
-const convites = ['johnatas','jhonatan'];
-let nome = document.getElementsByClassName('.inome')
-
-function convite(nomes){
-    for (chave in nomes){
-        if (chave === nome){
-            window.alert('oi');
-        }
+function VerificarEntrada(){
+    NomeConvidado = document.getElementById('nome').value;
+    ConvidadosCristian = ['johnatas','Jhonatan']
+    if (ConvidadosCristian.includes(NomeConvidado)){
+        document.getElementById('PermissaoDeEntrada').innerText = 'Você pode entrar!'
+    }else {
+        document.getElementById('PermissaoDeEntrada').innerText = 'Você não pode entrar!'
     }
-    
 }
